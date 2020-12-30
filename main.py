@@ -4,7 +4,7 @@ import sys
 
 
 def clean():
-    if sys.platform == "linux":
+    if sys.platform == "linux" or "mac" in sys.platfrom:
         os.system("clear")
     elif "win" in sys.platform:
         os.system("cls")
@@ -38,15 +38,15 @@ while True:
             print(f"{num1} % {num2} = {num1 % num2}")
 
         while True:
-            lanjut = input("\nlanjut (y/n)? ", )
-            if lanjut == "n" or lanjut == "N":
+            cont = input("\ncontinue (y/n)? ", )
+            if cont == "n" or cont == "N":
                 clean()
                 break
-            elif lanjut == "y" or lanjut == "Y":
+            elif cont == "y" or cont == "Y":
                 clean()
                 continue
 
-        if lanjut == "n" or lanjut == "N":
+        if cont == "n" or cont == "N":
             clean()
             print("thank you for using this calculator")
             break
