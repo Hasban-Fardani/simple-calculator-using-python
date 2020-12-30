@@ -11,6 +11,7 @@ def clean():
 
 
 while True:
+    clean()
     print("================ welcome to my simple calculator ================")
     print("by : Hasban Fardani\n\n")
     operation = input("please select the operation (+, -, x, :, %) or q for quit: ", )
@@ -44,6 +45,8 @@ while True:
                 break
             elif cont == "y" or cont == "Y":
                 clean()
+                break
+            else:
                 continue
 
         if cont == "n" or cont == "N":
