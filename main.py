@@ -4,7 +4,7 @@ import sys
 
 
 def clean():
-    if sys.platform == "linux" or "mac" in sys.platfrom:
+    if sys.platform == "linux" or "mac" in sys.platform:
         os.system("clear")
     elif "win" in sys.platform:
         os.system("cls")
